@@ -62,6 +62,7 @@ import java.util.ArrayList;
 public class GsmUmtsCallBarringOptions extends TimeConsumingPreferenceActivity
         implements EditPinPreference.OnPinEnteredListener,
         DialogInterface.OnClickListener, DialogInterface.OnCancelListener {
+
     private static final String LOG_TAG = "GsmUmtsCallBarringOptions";
     private static final boolean DBG = (PhoneGlobals.DBG_LEVEL >= 2);
 
@@ -518,7 +519,7 @@ public class GsmUmtsCallBarringOptions extends TimeConsumingPreferenceActivity
             displayPwChangeDialog(mIcicle.getInt(DIALOG_MESSAGE_KEY, mPwChangeDialogStrId), false);
             mButtonChangePW.setText(mIcicle.getString(DIALOG_PW_ENTRY_KEY));
         }
-     }
+    }
 
     @Override
     public void onResume() {

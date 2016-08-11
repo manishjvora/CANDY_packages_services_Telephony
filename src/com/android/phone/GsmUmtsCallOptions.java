@@ -18,6 +18,7 @@ package com.android.phone;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
@@ -31,6 +32,7 @@ public class GsmUmtsCallOptions extends PreferenceActivity {
     private final boolean DBG = (PhoneGlobals.DBG_LEVEL >= 2);
 
     private static final String CALL_FORWARDING_KEY = "call_forwarding_key";
+    private static final String CALL_BARRING_KEY = "call_barring_key";
     private static final String ADDITIONAL_GSM_SETTINGS_KEY = "additional_gsm_call_settings_key";
 
     @Override
@@ -101,6 +103,5 @@ public class GsmUmtsCallOptions extends PreferenceActivity {
                 prefScreen.removePreference(callBarringPref);
             }
         }
-
     }
 }
