@@ -373,6 +373,12 @@ public class CallFeaturesSetting extends PreferenceActivity
             /* tm.listen(mPhoneStateListener, PhoneStateListener.LISTEN_CALL_STATE); */
         }
 
+        // Remove callbarring as no one supports it
+        PreferenceScreen prefBarring = (PreferenceScreen)
+                prefSet.findPreference("button_callbarring_expand_key");
+        if (prefBarring != null) {
+                prefSet.removePreference(findPreference("button_callbarring_expand_key"));
+        }
         Preference wifiCallingSettings = findPreference(
                 getResources().getString(R.string.wifi_calling_settings_key));
 
