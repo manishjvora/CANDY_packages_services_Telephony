@@ -19,8 +19,7 @@
         package="com.android.phone"
         coreApp="true"
         android:sharedUserId="android.uid.phone"
-        android:sharedUserLabel="@string/phoneAppLabel"
->
+        android:sharedUserLabel="@string/phoneAppLabel" >
 
     <uses-sdk
         android:minSdkVersion="23"
