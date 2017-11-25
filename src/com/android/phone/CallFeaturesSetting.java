@@ -52,7 +52,6 @@ import com.android.internal.telephony.PhoneConstants;
 import com.android.phone.settings.PhoneAccountSettingsFragment;
 import com.android.phone.settings.VoicemailSettingsActivity;
 import com.android.phone.settings.fdn.FdnSetting;
-
 import com.android.internal.util.candy.CandyUtils;
 
 import java.util.List;
