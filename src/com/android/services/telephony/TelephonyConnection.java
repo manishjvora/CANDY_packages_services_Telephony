@@ -631,6 +631,7 @@ abstract class TelephonyConnection extends Connection implements Holdable,
             sendRttSessionRemotelyTerminated();
         }
 
+        @Override
         public void onOriginalConnectionReplaced(
                 com.android.internal.telephony.Connection newConnection) {
             setOriginalConnection(newConnection);
