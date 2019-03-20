@@ -93,5 +93,14 @@ public class GsmUmtsCallOptions extends PreferenceActivity {
             }
         }
 
+        Preference callBarringPref = prefScreen.findPreference(CALL_BARRING_KEY);
+        if (callBarringPref != null) {
+            if (b != null && b.getBoolean(CarrierConfigManager.KEY_CALL_BARRING_VISIBILITY_BOOL)) {
+                callBarringPref.setIntent(subInfoHelper.getIntent(GsmUmtsCallBarringOptions.class));
+            } else {
+                prefScreen.removePreference(callBarringPref);
+            }
+        }
+
     }
 }

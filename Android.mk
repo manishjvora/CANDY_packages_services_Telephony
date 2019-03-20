@@ -16,8 +16,8 @@ LOCAL_JAVA_LIBRARIES := \
         ims-common \
         org.apache.http.legacy \
         telephony-ext \
-	ims-ext-common\
-	libprotobuf-java-nano
+	    ims-ext-common\
+	    libprotobuf-java-nano
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
         android-support-v7-appcompat \
