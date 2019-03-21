@@ -311,7 +311,7 @@ final class CdmaConnection extends TelephonyConnection {
                 && getOriginalConnection().getDurationMillis() > 0) {
             mIsConnectionTimeReset = true;
             getOriginalConnection().resetConnectionTime();
-            resetCdmaConnectionTime();
+            //resetCdmaConnectionTime();
         }
     }
 
